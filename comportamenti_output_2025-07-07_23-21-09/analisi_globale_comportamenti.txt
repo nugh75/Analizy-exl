@@ -1,0 +1,207 @@
+### Dizionario completo di etichette dinamiche basate sui contenuti reali dei commenti:
+
+#### ETICHETTA: Collaborazione in gruppi piccoli
+DESCRIZIONE: La collaborazione in gruppi piccoli si manifesta attraverso l'interazione tra studenti in piccoli team (max 3 alunni) durante le attività di ricerca e confronto di informazioni. Questo comportamento favorisce lo scambio di idee e la costruzione di conoscenza in modo cooperativo.
+ESEMPI: "cercare informazioni, confrontarsi con i compagni (gruppi di max 3 alunni), confrontarsi poi con i compagni degli altri gruppi per uno scambio di informazioni e di riflessioni."
+
+---
+
+#### ETICHETTA: Utilizzo di strumenti tecnologici
+DESCRIZIONE: L’utilizzo di strumenti tecnologici include la creazione di esercizi, mappe concettuali, quiz e altre attività supportate dall’AI. Questo comportamento facilita la personalizzazione e l’efficacia delle attività educative.
+ESEMPI: "L'IA ha permesso di costruire agevolmente degli esercizi", "creando giochi ed esercizi", "utilizzo di web app come Algor education."
+
+---
+
+#### ETICHETTA: Curiosità verso la conoscenza
+DESCRIZIONE: La curiosità verso la conoscenza emerge attraverso l’interesse degli studenti a esplorare argomenti nuovi e a chiedere ulteriori informazioni. Questo comportamento favorisce un approccio attivo all’apprendimento.
+ESEMPI: "acquisizione di una maggiore autonomia e 'curiosità' verso la conoscenza", "hanno sviluppato nuove competenze", "hanno imparato ad utilizzare nuovi software di grafica."
+
+---
+
+#### ETICHETTA: Apprendimento autonomo
+DESCRIZIONE: L’apprendimento autonomo si riferisce alla capacità degli studenti di svolgere attività educative in modo indipendente, supportati da risorse e strumenti tecnologici.
+ESEMPI: "esercizi da svolgere autonomamente da parte degli studenti", "uno studente che faticava con la matematica ha potuto accedere a esercizi aggiuntivi mirati."
+
+---
+
+#### ETICHETTA: Motivazione e entusiasmo
+DESCRIZIONE: La motivazione e l’entusiasmo si manifestano attraverso l’aumento dell’interesse degli studenti per le attività e la loro disponibilità a partecipare attivamente.
+ESEMPI: "Gli studenti sono felici", "Sono più motivati", "hanno imparato ad utilizzare nuovi software di grafica per ottenere dei risultati eccellenti in poco tempo."
+
+---
+
+#### ETICHETTA: Riassunti e sintesi
+DESCRIZIONE: La creazione di riassunti e sintesi è un comportamento che coinvolge la condensazione di informazioni complesse in forme più semplici e comprensibili.
+ESEMPI: "creazione di mappe personalizzate, riassunti, traduzione testi", "sintesi di un capitolo di storia, partendo dalle foto dei paragrafi."
+
+---
+
+#### ETICHETTA: Utilizzo di immagini e supporto visivo
+DESCRIZIONE: L’utilizzo di immagini e supporto visivo include l’integrazione di elementi visivi (come immagini, mappe e infografiche) per facilitare la comprensione degli argomenti.
+ESEMPI: "L'accostamento di immagini al testo", "creando mappe con immagini di politica economica", "con disegni più esplicativi."
+
+---
+
+#### ETICHETTA: Feedback e autocorrezione
+DESCRIZIONE: Il feedback e l’autocorrezione si riferiscono alla capacità degli studenti di valutare e migliorare le loro prestazioni attraverso l’utilizzo di strumenti tecnologici o interazioni con i peers.
+ESEMPI: "Maggiore possibilità di autocorrezione", "confrontano diversi modi per risolvere un problema."
+
+---
+
+#### ETICHETTA: Apprendimento personalizzato
+DESCRIZIONE: L’apprendimento personalizzato si manifesta attraverso l’utilizzo di strategie e risorse adattate alle necessità individuali degli studenti.
+ESEMPI: "Personalizzando i percorsi in base alle necessità dei singoli studenti", "uno studente visivo può ricevere mappe concettuali o infografiche generate automaticamente dall’AI."
+
+---
+
+#### ETICHETTA: Collaborazione tra studenti
+DESCRIZIONE: La collaborazione tra studenti coinvolge l’interazione e il lavoro in gruppo, sia durante le attività di ricerca che nella creazione di contenuti.
+ESEMPI: "confrontarsi con i compagni degli altri gruppi per uno scambio di informazioni e di riflessioni", "l’accostamento di immagini al testo."
+
+---
+
+#### ETICHETTA: Utilizzo di quiz e test
+DESCRIZIONE: L’utilizzo di quiz e test include la creazione e l’utilizzo di attività di valutazione per verificare la comprensione degli argomenti.
+ESEMPI: "creare quiz e test", "grazie ai quiz interattivi."
+
+---
+
+#### ETICHETTA: Curiosità e ricerca di informazioni
+DESCRIZIONE: La curiosità e la ricerca di informazioni si manifestano attraverso l’interesse degli studenti a sondare argomenti nuovi e a cercare ulteriori dettagli.
+ESEMPI: "Ho notato via via l'acquisizione di una maggiore autonomia e 'curiosità' verso la conoscenza", "ricerca di esempi sulla lettura e scrittura di file con Java."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la creazione di contenuti
+DESCRIZIONE: L’utilizzo di AI per la creazione di contenuti include la generazione di esercizi, mappe concettuali e altre risorse educative attraverso l’AI.
+ESEMPI: "L'IA ha permesso di costruire agevolmente degli esercizi", "creazione di mappe personalizzate, riassunti, traduzione testi."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle simulazioni
+DESCRIZIONE: L’apprendimento basato sulle simulazioni coinvolge l’utilizzo di attività simulate per favorire la comprensione e l’interesse degli studenti.
+ESEMPI: "simulazioni delle prove invalsi", "attraverso risposte immediate, progettare piani di lezione che si adattano allo stile di apprendimento degli studenti."
+
+---
+
+#### ETICHETTA: Utilizzo di lingue diverse
+DESCRIZIONE: L’utilizzo di lingue diverse include la traduzione di testi e l’adattamento di contenuti per studenti non italofoni.
+ESEMPI: "Ho adattato testi per alunni non italofoni.", "Traduzione testi da diverse lingue."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle attività interactive
+DESCRIZIONE: L’apprendimento basato sulle attività interactive si manifesta attraverso l’utilizzo di videogame, quiz e altre attività che richiedono l’interazione attiva degli studenti.
+ESEMPI: "Mi ha consigliato dei giochi molto funzionali", "Attraverso quiz interattivi."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la valutazione
+DESCRIZIONE: L’utilizzo di AI per la valutazione include la creazione di attività di valutazione personalizzate e l’analisi delle prestazioni degli studenti.
+ESEMPI: "PUò L'IA AUTOMATIZZARE IL PROCESSO DI VALUTAZIONE DEGLI ALUNNI", "le piattaforme di apprendimento adattivo basate su IA analizzano le prestazioni degli studenti in tempo reale."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle esperienze concrete
+DESCRIZIONE: L’apprendimento basato sulle esperienze concrete coinvolge l’utilizzo di attività práticas e coinvolgenti per favorire la comprensione degli argomenti.
+ESEMPI: "Attraverso interazione con gli strumenti didattici uno con altro", "simulazioni delle prove invalsi."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la personalizzazione
+DESCRIZIONE: L’utilizzo di AI per la personalizzazione include l’adattamento di contenuti e attività alle necessità individuali degli studenti.
+ESEMPI: "Personalizzando i percorsi in base alle necessità dei singoli studenti", "uno studente visivo può ricevere mappe concettuali o infografiche generate automaticamente dall’AI."
+
+---
+
+#### ETICHETTA: Collaborazione tra docenti e studenti
+DESCRIZIONE: La collaborazione tra docenti e studenti si manifesta attraverso il lavoro in team e la creazione di contenuti educativi insieme.
+ESEMPI: "L'IA mi ha permesso di proporre attività, come giochi o simulazioni, che rendono l'apprendimento più coinvolgente.", "Mi ha permesso di svolgere un cooperative learning di Biologia."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la risoluzione di problemi
+DESCRIZIONE: L’utilizzo di AI per la risoluzione di problemi include l’utilizzo di strumenti AI per aiutare gli studenti a risolvere esercizi e compiti più complessi.
+ESEMPI: "Ho fornito ai ragazzi problemi algebrici e quando non arrivavano alla soluzione ho fatto vedere loro come la I.a ha risolto il tutto fornendogli una guida procedurale su come si portava il compito a termine."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle riflessioni
+DESCRIZIONE: L’apprendimento basato sulle riflessioni coinvolge l’analisi e la discussione di informazioni e argomenti per favorire una comprensione più profonda.
+ESEMPI: "confrontarsi con i compagni degli altri gruppi per uno scambio di informazioni e di riflessioni", "operare un confronto tra gli output ottenuti attraverso le varie AI."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la creazione di mappe
+DESCRIZIONE: L’utilizzo di AI per la creazione di mappe include l’utilizzo di strumenti AI per generare mappe concettuali e visive per supportare l’apprendimento.
+ESEMPI: "creazione di mappe personalizzate", "mappa con immagini di politica economica."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle emozioni
+DESCRIZIONE: L’apprendimento basato sulle emozioni coinvolge l’utilizzo di attività che generano entusiasmo, motivazione e coinvolgimento emotivo.
+ESEMPI: "Gli studenti sono felici", "ha reso la lezione più accattivante."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la comunicazione
+DESCRIZIONE: L’utilizzo di AI per la comunicazione include l’utilizzo di strumenti AI per favorire la comunicazione tra studenti e docenti.
+ESEMPI: "Mi ha permesso di monitorare i progressi degli alunni in tempo reale e di intervenire tempestivamente con strategie didattiche mirate.", "attraverso risposte immediate, progettare piani di lezione che si adattano allo stile di apprendimento degli studenti."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle prove
+DESCRIZIONE: L’apprendimento basato sulle prove coinvolge l’utilizzo di attività che richiedono l’azione e la prova per favorire l’apprendimento prático.
+ESEMPI: "Attraverso simulazioni", "simulazioni delle prove invalsi."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per l’educazione inclusiva
+DESCRIZIONE: L’utilizzo di AI per l’educazione inclusiva include l’utilizzo di strumenti AI per supportare studenti con bisogni educativi speciali.
+ESEMPI: "Gli alunni con DSA e con disabilità hanno migliorato la loro capacità di scrittura e di memorizzazione lessicale e delle strutture grammaticali.", "L’intelligenza artificiale ha stimolato la loro curiosità, favorendo l’apprendimento dei contenuti in modo più divertente e creativo."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle tecnologie immersive
+DESCRIZIONE: L’apprendimento basato sulle tecnologie immersive coinvolge l’utilizzo di realtà virtuale, grafiche avanzate e altre tecnologie per creare esperienze educative immersive.
+ESEMPI: "Le piattaforme di apprendimento adattivo basate su IA analizzano le prestazioni degli studenti in tempo reale, identificando aree di forza e debolezza."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per l’autocorrezione
+DESCRIZIONE: L’utilizzo di AI per l’autocorrezione include l’utilizzo di strumenti AI per aiutare gli studenti a correggere le loro attività e a migliorare le loro prestazioni.
+ESEMPI: "Maggiore possibilità di autocorrezione", "confrontano diversi modi per risolvere un problema."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle attività collaborative
+DESCRIZIONE: L’apprendimento basato sulle attività collaborative coinvolge l’interazione e il lavoro in gruppo per raggiungere obiettivi educativi comuni.
+ESEMPI: "Collaborazione in gruppi piccoli", "l’accostamento di immagini al testo."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la creazione di riassunti
+DESCRIZIONE: L’utilizzo di AI per la creazione di riassunti include l’utilizzo di strumenti AI per condensare informazioni complesse in forme più semplici e comprensibili.
+ESEMPI: "creazione di mappe personalizzate, riassunti, traduzione testi", "sintesi di un capitolo di storia, partendo dalle foto dei paragrafi."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle riflessioni critiche
+DESCRIZIONE: L’apprendimento basato sulle riflessioni critiche coinvolge l’analisi e la valutazione critica di informazioni e argomenti per sviluppare il pensiero critico.
+ESEMPI: "Fornire mappe e anticipatori permette agli studenti di avere chiaro ciò che si andrà a spiegare e rende più facile seguire la lezione.", "hanno sviluppato nuove competenze."
+
+---
+
+#### ETICHETTA: Utilizzo di AI per la creazione di quiz
+DESCRIZIONE: L’utilizzo di AI per la creazione di quiz include l’utilizzo di strumenti AI per generare attività di valutazione educative.
+ESEMPI: "creare quiz e test", "grazie ai quiz interattivi."
+
+---
+
+#### ETICHETTA: Apprendimento basato sulle simulazioni
+DESCRIZIONE: L’apprendimento basato sulle simulazioni coinvolge l’utilizzo di attività simulate per favorire la comprensione e l’interesse degli studenti.
+ESEMPI: "simulazioni delle prove invalsi", "attraverso risposte immediate, progettare piani di lezione che si adattano allo stile di apprendimento degli studenti."
+
+---
+
+Questo dizionario include etichette dinamiche basate su comportamenti, atteggiamenti e strategie osservati nel testo fornito, ciascuna delle quali è descritta in modo dettagliato e accompagnata da esempi di frasi tipiche.
