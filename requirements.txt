@@ -1,0 +1,12 @@
+pandas
+langchain
+langchain-community
+langchain-ollama
+python-dotenv
+python-docx
+ipywidgets
+jupyter
+openpyxl
+xlsxwriter
+requests
+httpx
