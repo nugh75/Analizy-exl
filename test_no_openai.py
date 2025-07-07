@@ -9,7 +9,7 @@ def test_no_openai_imports():
     
     try:
         # Questo dovrebbe fallire
-        import langchain_openai
+        from langchain_openai import ChatOpenAI
         print("❌ ERRORE: langchain_openai è ancora presente!")
         return False
     except ImportError:
