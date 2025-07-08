@@ -1,0 +1,79 @@
+1. ETICHETTA: Strumento di riepilogo
+   DESCRIZIONE: Riferimento ai software che sintetizzano e riassumono testi ingenti
+   ESEMPI: Riassunti, estratti chiave, concetti importanti
+
+2. ETICHETTA: Tecnologia istantanea
+   DESCRIZIONE: Riferimento a tecnologie che forniscono risposte immediate
+   ESEMPI: Risposte rapide, tempo di attesa ridotto
+
+3. ETICHETTA: Varietà argomenti
+   DESCRIZIONE: Tecnologia in grado di affrontare una vasta gamma di temi
+   ESEMPI: Ampia gamma di argomenti, versatilità, multidisciplinarietà
+
+4. ETICHETTA: Supporto nell'attività
+   DESCRIZIONE: Strumenti che agevolano lo svolgimento delle attività quotidiane
+   ESEMPI: Aiuto nelle attività, facilitazione del lavoro, supporto pratico
+
+5. ETICHETTA: Interfaccia umanizzata
+   DESCRIZIONE: Tecnologia che simula interazioni con utenti umani
+   ESEMPI: Agente come utente umano, conversazione naturale
+
+6. ETICHETTA: Strumento di ricerca
+   DESCRIZIONE: Strumenti che aiutano a trovare informazioni specifiche
+   ESEMPI: Fonti affidabili, reperimento facile
+
+7. ETICHETTA: Dipendenza tecnologica
+   DESCRIZIONE: Preoccupazione per l'eccessiva dipendenza dalle tecnologie digitali
+   ESEMPI: Paura di sostituzione, timore di delega totale all'AI
+
+8. ETICHETTA: Ansia da prestazione
+   DESCRIZIONE: Apprensione riguardo alle prestazioni offerte dalle tecnologie digitali
+   ESESPLI: Paura di fallimento, timore di non essere all'altezza
+
+9. ETICHETTA: Frustrazione tecnica
+   DESCRIZIONE: Frustrazione derivante dall'uso di strumenti tecnologici
+   ESEMPI: Difficoltà d'uso, mancanza di competenze di base
+
+10. ETICHETTA: Perdita umanità
+    DESCRIZIONE: Preoccupazione per la perdita dell'elemento umano nelle interazioni
+    ESEMPI: Tristezza per la perdita d'umanità, timore di isolamento sociale
+
+11. ETICHETTA: Regolamentazione etica
+    DESCRIZIONE: Bisogno di normative che guidino l'uso etico delle tecnologie digitali
+    ESEMPI: Monitoraggio impatti, supporto emotivo nella transizione
+
+12. ETICHETTA: Competenza digitale
+    DESCRIZIONE: Importanza dell'acquisizione e del mantenimento di competenze digitali
+    ESEMPI: Formazione continua, trasparenza decisioni
+
+13. ETICHETTA: Protezione privacy
+    DESCRIZIONE: Necessità di proteggere i dati personali e la privacy degli utenti
+    ESEMPI: Violazione privacy, controllo eccessivo
+
+14. ETICHETTA: Formazione docenti
+    DESCRIZIONE: Importanza della formazione per l'uso delle tecnologie digitali in ambito educativo
+    ESEMPI: Implementazione graduale, supporto nella transizione
+
+15. ETICHETTA: Delega all'AI
+    DESCRIZIONE: Tendenza a delegare compiti e responsabilità all'intelligenza artificiale
+    ESEMPI: Dipendenza eccessiva, abbandono del pensiero critico
+
+16. ETICHETTA: Bias algoritmici
+    DESCRIZIONE: Presenza di pregiudizi incorporati negli algoritmi delle tecnologie digitali
+    ESEMPI: Discriminazione, mancanza di equità
+
+17. ETICHETTA: Vulnerabilità cyber
+    DESCRIZIONE: Rischio di attacchi informatici e sfruttamento dei sistemi digitali
+    ESEMPI: Minaccia alla sicurezza, vulnerabilità delle reti
+
+18. ETICHETTA: Curiosità tecnologica
+    DESCRIZIONE: Interesse per le nuove tecnologie e la loro applicazione
+    ESEMPI: Entusiasmo per l'innovazione, curiosità verso l'AI
+
+19. ETICHETTA: Fiducia nel progresso
+    DESCRIZIONE: Sentimento di ottimismo riguardo al futuro e all'evoluzione tecnologica
+    ESEMPI: Speranza in un miglioramento, convinzione nelle potenzialità dell'AI
+
+20. ETICHETTA: Nostalgia per la tradizione
+    DESCRIZIONE: Attaccamento emotivo alle forme più tradizionali di interazione e apprendimento
+    ESEMPI: Timore del cambiamento, nostalgia per il passato

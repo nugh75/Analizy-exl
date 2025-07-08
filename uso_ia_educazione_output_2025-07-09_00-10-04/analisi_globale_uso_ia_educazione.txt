@@ -1,0 +1,34 @@
+1. ETICHETTA: Piattaforme AI educative
+   DESCRIZIONE: Riferimento a specifiche tecnologie di Intelligenza Artificiale utilizzate per l'istruzione, come ChatGPT o Consensus
+   ESEMPI: Chatgpt, Generative AI, Consensus
+2. ETICHETTA: Velocità di risposta
+   DESCRIZIONE: La capacità dell'IA di fornire rapidamente informazioni e risposte
+   ESEMPI: Immediato, Pochissimo tempo, Rapidamente
+3. ETICHETTA: Riepilogo ed estrazione concetti chiave
+   DESCRIZIONE: L'abilità dell'IA di rilevare e sintetizzare i concetti più importanti dei testi forniti
+   ESEMPI: Riassunti, Concetti principali, Rilevare informazioni
+4. ETICHETTA: Interazione umana simulata
+   DESCRIZIONE: L'IA che si rapporta con l'utente come se fosse un essere umano
+   ESEMPI: Agente umanoide, Simile ad un utente umano
+5. ETICHETTA: Ampiezza di argomenti coperti
+   DESCRIZIONE: La versatilità dell'IA nell'affrontare e fornire informazioni su una vasta gamma di tematiche
+   ESEMPI: Molti argomenti, Diversi ambiti, Versatile
+6. ETICHETTA: Supporto a attività multiple
+   DESCRIZIONE: L'utilizzo dell'IA per assistere e facilitare varie attività didattiche
+   ESEMPI: Aiuto nelle attività, Facilita compiti, Supporto allo studio
+7. ETICHETTA: Accessibilità alle fonti affidabili
+   DESCRIZIONE: L'abilità dell'IA di reperire ed evidenziare informazioni attendibili e pertinenti
+   ESEMPI: Fonti affidabili, Informazioni accurate, Reperimento facile
+8. ETICHETTA: Semplificazione della ricerca online
+   DESCRIZIONE: L'utilizzo dell'IA per selezionare ed evidenziare le informazioni più rilevanti tra diverse fonti web
+   ESEMPI: Non dover cercare su vari siti, Trovare facilmente informazioni, Selezione automatica
+9. ETICHETTA: Interfaccia di tipo computerizzato
+   DESCRIZIONE: L'uso di un'interfaccia digitale o basata su computer per accedere alle funzionalità dell'IA
+   ESEMPI: Computer, Piattaforma online, Applicazione web
+
+Per ogni categoria:
+- Intensità (1-5): 4
+- Frequenza menzione: Alta
+- Stakeholder coinvolti: Studenti, Docenti, Sviluppatori di IA educativa
+- Urgenza intervento: Media
+- Strategie gestione: Formazione continua, Monitoraggio e regolamentazione etica, Supporto emotivo alla transizione
