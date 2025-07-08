@@ -5,8 +5,10 @@ Funzioni per il parsing e l'elaborazione dei dati
 
 import re
 import json
+import os
 import pandas as pd
 from typing import Dict, List, Any, Tuple
+import os
 
 
 def parse_etichette_dinamiche(risposta_ai: str) -> Dict[str, Dict[str, str]]:
@@ -257,3 +259,90 @@ def calculate_analysis_statistics(risultati: Dict[str, List]) -> Dict[str, Any]:
         "top_labels": top_etichette,
         "completion_rate": len(coefficienti_validi) / len(coefficienti) if coefficienti else 0
     }
+
+
+def load_excel_file(filepath: str) -> pd.DataFrame:
+    """
+    Carica un file Excel in modo sicuro
+    
+    Args:
+        filepath: Percorso del file Excel
+    
+    Returns:
+        DataFrame pandas o None se errore
+    """
+    
+    try:
+        # Prova a caricare il file Excel
+        if filepath.endswith('.xlsx'):
+            df = pd.read_excel(filepath, engine='openpyxl')
+        elif filepath.endswith('.xls'):
+            df = pd.read_excel(filepath, engine='xlrd')
+        else:
+            raise ValueError(f"Formato file non supportato: {filepath}")
+        
+        print(f"✅ File Excel caricato: {filepath}")
+        print(f"📊 Dimensioni: {df.shape[0]} righe, {df.shape[1]} colonne")
+        
+        return df
+    
+    except Exception as e:
+        print(f"❌ Errore caricamento file {filepath}: {e}")
+        return None
+
+
+def get_column_info(df: pd.DataFrame) -> Dict[str, Dict[str, Any]]:
+    """
+    Analizza le colonne di un DataFrame
+    
+    Args:
+        df: DataFrame da analizzare
+    
+    Returns:
+        Dizionario con informazioni sulle colonne
+    """
+    
+    column_info = {}
+    
+    for col in df.columns:
+        info = {
+            'tipo': str(df[col].dtype),
+            'non_null': df[col].notna().sum(),
+            'null': df[col].isna().sum(),
+            'unique': df[col].nunique(),
+            'sample': df[col].dropna().head(3).tolist() if not df[col].empty else []
+        }
+        column_info[col] = info
+    
+    return column_info
+
+
+def validate_excel_file(filepath: str) -> Tuple[bool, str]:
+    """
+    Valida un file Excel
+    
+    Args:
+        filepath: Percorso del file da validare
+    
+    Returns:
+        (is_valid: bool, message: str)
+    """
+    
+    if not filepath:
+        return False, "Percorso file vuoto"
+    
+    if not filepath.endswith(('.xlsx', '.xls')):
+        return False, "File deve essere .xlsx o .xls"
+    
+    if not os.path.exists(filepath):
+        return False, f"File non trovato: {filepath}"
+    
+    try:
+        df = pd.read_excel(filepath, nrows=1)  # Carica solo la prima riga per test
+        if df.empty:
+            return False, "File Excel vuoto"
+        
+        return True, f"File Excel valido con {len(df.columns)} colonne"
+    
+    except Exception as e:
+        return False, f"Errore lettura file: {e}"

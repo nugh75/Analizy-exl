@@ -8,6 +8,10 @@ import requests
 import json
 from langchain_ollama import OllamaLLM
 from typing import Union, Dict, List, Any
+from dotenv import load_dotenv
+
+# Forza caricamento file .env
+load_dotenv(override=True)
 
 
 class OpenRouterLLM:
@@ -68,9 +72,12 @@ def create_llm(provider: str, model: str, temperature: float = 0.7) -> Union[Oll
     """
     
     if provider.lower() == 'ollama':
+        # Usa l'URL personalizzato dal file .env se presente
+        base_url = os.getenv('OLLAMA_BASE_URL', 'http://localhost:11434')
         return OllamaLLM(
             model=model,
-            temperature=temperature
+            temperature=temperature,
+            base_url=base_url
         )
     
     elif provider.lower() == 'openrouter':
@@ -102,11 +109,16 @@ def test_connection(provider: str, model: str = None) -> tuple[bool, str]:
     
     try:
         if provider.lower() == 'ollama':
-            # Test connessione Ollama
-            test_model = model or 'llama3.2'
-            llm = OllamaLLM(model=test_model, temperature=0.1)
+            # Test connessione Ollama con URL personalizzato
+            base_url = os.getenv('OLLAMA_BASE_URL', 'http://localhost:11434')
+            test_model = model or os.getenv('OLLAMA_MODEL', 'mixtral:8x7b')
+            
+            # Debug: stampa la configurazione che stiamo usando
+            print(f"🔍 Debug Ollama: URL={base_url}, Model={test_model}")
+            
+            llm = OllamaLLM(model=test_model, temperature=0.1, base_url=base_url)
             response = llm.invoke("Rispondi solo 'OK' se mi ricevi.")
-            return True, f"Ollama connesso con modello {test_model}"
+            return True, f"Ollama connesso ({base_url}) con modello {test_model}"
         
         elif provider.lower() == 'openrouter':
             # Test connessione OpenRouter
@@ -114,7 +126,14 @@ def test_connection(provider: str, model: str = None) -> tuple[bool, str]:
             if not api_key:
                 return False, "OPENROUTER_API_KEY non trovata"
             
-            test_model = model or 'meta-llama/llama-3.2-3b-instruct:free'
+            if api_key.startswith('sk-or-your-'):
+                return False, "API key OpenRouter non configurata (ancora placeholder)"
+            
+            test_model = model or os.getenv('OPENROUTER_MODEL', 'nvidia/llama-3.1-nemotron-ultra-253b-v1')
+            
+            # Debug: stampa la configurazione che stiamo usando
+            print(f"🔍 Debug OpenRouter: Model={test_model}, API_Key={'***' + api_key[-8:]}")
+            
             llm = OpenRouterLLM(model=test_model, api_key=api_key, temperature=0.1)
             response = llm.invoke("Rispondi solo 'OK' se mi ricevi.")
             return True, f"OpenRouter connesso con modello {test_model}"
@@ -202,3 +221,58 @@ def validate_model_config(provider: str, model: str) -> tuple[bool, str]:
         return False, f"Modello {model} non disponibile per {provider}"
     
     return True, f"Configurazione {provider}/{model} valida"
+
+
+def test_all_providers() -> Dict[str, bool]:
+    """
+    Testa tutti i provider disponibili
+    
+    Returns:
+        Dizionario con lo stato di ogni provider
+    """
+    
+    # Forza ricaricamento variabili d'ambiente
+    load_dotenv(override=True)
+    
+    status = {}
+    
+    # Test Ollama
+    ollama_ok, ollama_msg = test_connection('ollama')
+    status['ollama'] = ollama_ok
+    
+    # Test OpenRouter
+    openrouter_ok, openrouter_msg = test_connection('openrouter')
+    status['openrouter'] = openrouter_ok
+    
+    print("🔍 VERIFICA STATO PROVIDER AI")
+    print("=" * 50)
+    print(f"🏠 Ollama: {'✅' if ollama_ok else '❌'} {ollama_msg}")
+    print(f"🌐 OpenRouter: {'✅' if openrouter_ok else '❌'} {openrouter_msg}")
+    print("=" * 50)
+    
+    return status
+
+
+def create_llm_instance(config: Dict[str, Any]) -> Union[OllamaLLM, OpenRouterLLM]:
+    """
+    Crea un'istanza LLM basata sulla configurazione
+    
+    Args:
+        config: Configurazione con chiavi 'provider', 'model', 'temperature'
+    
+    Returns:
+        Istanza del client LLM
+    """
+    
+    provider = config.get('provider', 'ollama')
+    model = config.get('model')
+    temperature = config.get('temperature', 0.7)
+    
+    # Usa modelli di default se non specificati
+    if not model:
+        if provider == 'ollama':
+            model = os.getenv('OLLAMA_MODEL', 'llama3.2')
+        elif provider == 'openrouter':
+            model = os.getenv('OPENROUTER_MODEL', 'meta-llama/llama-3.2-3b-instruct:free')
+    
+    return create_llm(provider, model, temperature)

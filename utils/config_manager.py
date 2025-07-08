@@ -5,7 +5,7 @@ Gestione delle configurazioni e parametri dell'applicazione
 
 import json
 import os
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, List
 from dataclasses import dataclass, asdict
 
 
@@ -271,6 +271,53 @@ def validate_environment() -> Tuple[bool, List[str]]:
     return len(issues) == 0, issues
 
 
+def load_config(filepath: str = "config.json") -> AnalysisConfig:
+    """
+    Carica configurazione da file o variabili d'ambiente
+    
+    Args:
+        filepath: Percorso del file di configurazione
+    
+    Returns:
+        Istanza di AnalysisConfig
+    """
+    
+    # Prima prova a caricare da file
+    if os.path.exists(filepath):
+        return AnalysisConfig.load_from_file(filepath)
+    
+    # Altrimenti carica da variabili d'ambiente
+    config = AnalysisConfig()
+    
+    # Aggiorna con variabili d'ambiente se disponibili
+    config.ai_provider = os.getenv('AI_PROVIDER', config.ai_provider)
+    config.ai_model = os.getenv('OLLAMA_MODEL' if config.ai_provider == 'ollama' else 'OPENROUTER_MODEL', config.ai_model)
+    config.temperature = float(os.getenv('TEMPERATURE', str(config.temperature)))
+    
+    return config
+
+
+def save_config(config: AnalysisConfig, filepath: str = "config.json") -> bool:
+    """
+    Salva configurazione su file
+    
+    Args:
+        config: Configurazione da salvare
+        filepath: Percorso del file di destinazione
+    
+    Returns:
+        True se salvato con successo
+    """
+    
+    return config.save_to_file(filepath)
+
+
 def get_default_config() -> AnalysisConfig:
-    """Restituisce la configurazione predefinita"""
+    """
+    Restituisce configurazione di default
+    
+    Returns:
+        Configurazione di default
+    """
+    
     return AnalysisConfig()

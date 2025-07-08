@@ -297,3 +297,137 @@ def calculate_performance_stats(batch_size: int, num_comments: int) -> Dict[str,
         "risparmio_chiamate": risparmio_chiamate,
         "num_batch": num_batch
     }
+
+
+def process_comments_batch(comments: List[str], 
+                         prompt: str, 
+                         llm: Any, 
+                         batch_size: int = 5,
+                         progress_callback=None) -> List[str]:
+    """
+    Processa una lista di commenti usando batch processing
+    
+    Args:
+        comments: Lista di commenti da processare
+        prompt: Prompt base per l'analisi
+        llm: Modello di linguaggio
+        batch_size: Dimensione dei batch
+        progress_callback: Funzione per aggiornare il progresso
+    
+    Returns:
+        Lista dei risultati dell'analisi
+    """
+    
+    if not comments:
+        return []
+    
+    risultati = []
+    total_batches = (len(comments) + batch_size - 1) // batch_size
+    
+    for i in range(0, len(comments), batch_size):
+        batch = comments[i:i + batch_size]
+        batch_num = (i // batch_size) + 1
+        
+        # Crea prompt per il batch
+        batch_prompt = create_batch_prompt_simple(batch, prompt)
+        
+        try:
+            # Chiama il modello
+            response = llm.invoke(batch_prompt)
+            
+            # Parsing della risposta
+            batch_results = parse_batch_response_simple(response, len(batch))
+            risultati.extend(batch_results)
+            
+            # Aggiorna progresso se callback fornito
+            if progress_callback:
+                progress_callback(batch_num, total_batches)
+            
+            # Pausa tra batch per evitare rate limiting
+            time.sleep(0.5)
+            
+        except Exception as e:
+            logging.error(f"Errore processing batch {batch_num}: {e}")
+            # Aggiungi risultati di fallback
+            risultati.extend([f"Errore: {str(e)[:50]}" for _ in batch])
+    
+    return risultati
+
+
+def create_batch_prompt_simple(comments: List[str], base_prompt: str) -> str:
+    """
+    Crea un prompt per l'analisi batch semplificata
+    
+    Args:
+        comments: Lista di commenti
+        base_prompt: Prompt base
+    
+    Returns:
+        Prompt formattato per il batch
+    """
+    
+    # Numera i commenti
+    numbered_comments = "\n".join([
+        f"Commento {i+1}: {comment}"
+        for i, comment in enumerate(comments)
+    ])
+    
+    return f"""{base_prompt}
+
+COMMENTI DA ANALIZZARE:
+{numbered_comments}
+
+FORMATO RISPOSTA:
+Commento 1: [etichetta/categoria]
+Commento 2: [etichetta/categoria]
+{chr(10).join([f"Commento {i+1}: [etichetta/categoria]" for i in range(2, len(comments))])}
+
+Analizza ogni commento separatamente e fornisci una risposta chiara e concisa per ciascuno."""
+
+
+def parse_batch_response_simple(response: str, expected_count: int) -> List[str]:
+    """
+    Parsing semplificato della risposta batch
+    
+    Args:
+        response: Risposta del modello
+        expected_count: Numero di risultati attesi
+    
+    Returns:
+        Lista di risultati estratti
+    """
+    
+    results = []
+    lines = response.split('\n')
+    
+    # Cerca pattern "Commento X: ..."
+    for line in lines:
+        line = line.strip()
+        if match := re.search(r'Commento\s+\d+:\s*(.+)', line, re.IGNORECASE):
+            result = match.group(1).strip()
+            if result:
+                results.append(result)
+    
+    # Se il parsing non ha prodotto abbastanza risultati, aggiungi fallback
+    while len(results) < expected_count:
+        results.append("Non classificato")
+    
+    # Tronca se troppi risultati
+    return results[:expected_count]
+
+
+def estimate_batch_time(num_comments: int, batch_size: int, time_per_batch: float = 2.0) -> float:
+    """
+    Stima il tempo necessario per il processing batch
+    
+    Args:
+        num_comments: Numero totale di commenti
+        batch_size: Dimensione del batch
+        time_per_batch: Tempo stimato per batch in secondi
+    
+    Returns:
+        Tempo stimato in secondi
+    """
+    
+    num_batches = (num_comments + batch_size - 1) // batch_size
+    return num_batches * time_per_batch
