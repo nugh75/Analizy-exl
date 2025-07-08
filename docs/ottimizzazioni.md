@@ -127,6 +127,56 @@ Il notebook `analisi_interattiva.ipynb` ora ha una configurazione AI unica, puli
 
 ---
 
+## 📊 Template di Prompt Multidimensionali - COMPLETATO ✅
+
+### Nuovi Template Specializzati per Analisi IA Educativa
+
+Sono stati implementati **3 template multidimensionali** specializzati per l'analisi dell'uso dell'intelligenza artificiale in ambito educativo:
+
+#### 1. Template "ia_completa" 🧠
+- **Scopo**: Analisi completa multidimensionale dell'IA educativa
+- **Dimensioni coperte**: 
+  - Pro e contro dell'implementazione
+  - Impatti su studenti, docenti, istituzioni
+  - Percezioni e atteggiamenti degli stakeholder
+  - Rischi e criticità (pedagogici, etici, professionali)
+  - Strategie di implementazione
+  - Visioni future dell'educazione
+- **Output**: Massimo 25 categorie multidimensionali
+
+#### 2. Template "benefici_barriere_ia" ⚖️
+- **Scopo**: Analisi bilanciata di opportunità vs ostacoli
+- **Dimensioni coperte**:
+  - Benefici immediati, medio e lungo termine
+  - Barriere tecniche, economiche, culturali, normative
+  - Strategie per superare gli ostacoli
+  - Fattori critici di successo
+- **Output**: Massimo 22 categorie di benefici e barriere
+
+#### 3. Template "atteggiamenti_motivazioni_ia" 🎭
+- **Scopo**: Analisi di percezioni, motivazioni e comportamenti
+- **Dimensioni coperte**:
+  - Atteggiamenti positivi (entusiasmo, pragmatismo)
+  - Atteggiamenti negativi (scetticismo, resistenza)
+  - Motivazioni intrinseche ed estrinseche
+  - Comportamenti di adozione, sperimentazione, rifiuto
+  - Aspettative e preoccupazioni
+- **Output**: Massimo 20 categorie comportamentali
+
+### Vantaggi dei Template Multidimensionali
+
+1. **Riduzione Costi**: Un singolo template copre multiple dimensioni analitiche
+2. **Coerenza**: Analisi strutturata e standardizzata
+3. **Completezza**: Copertura esaustiva degli aspetti rilevanti
+4. **Efficienza**: Riduzione del numero di prompt necessari
+5. **Qualità**: Template scientificamente strutturati per l'analisi educativa
+
+### Integrazione nel Workflow
+
+I template sono integrati nella sezione "Template di Prompt" del notebook e sono utilizzabili attraverso l'interfaccia di selezione esistente, compatibili con la configurazione triple-model.
+
+---
+
 ## 📋 Changelog
 
 ### Versione Corrente
