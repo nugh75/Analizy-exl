@@ -1,0 +1,1 @@
+Errore durante l'analisi globale: [Errno 111] Connection refused
